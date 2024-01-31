@@ -16,10 +16,11 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    for ch in text:
-        if text == "." or text == ":" or text == "?":
-            print('\n')
+    for ch in  ".:?":
+        text = (ch + '\n\n').join(
+            [line.strip(" ") for line in text.split(ch)])
+    print(text, end="")
 
 if __name__ == '__main__':
     import doctest
-    doctest.testfile("tests/5-text_indentation.txt")")i")⅕
+    doctest.testfile("tests/5-text_indentation.txt")

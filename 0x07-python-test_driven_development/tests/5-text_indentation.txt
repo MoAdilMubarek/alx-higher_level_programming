@@ -1,0 +1,26 @@
+>>> print = __import__('5-text_indentation').text_indentation
+
+>>> print("yo:yo")
+yo:
+<BLANKLINE>
+yo
+
+>>> print(1)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> print(1.2)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> print("yo.yo")
+yo.
+<BLANKLINE>
+yo
+
+>>> print("yo?yo")
+yo?
+<BLANKLINE>
+yo
