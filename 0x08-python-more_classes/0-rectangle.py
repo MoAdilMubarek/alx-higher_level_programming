@@ -2,6 +2,6 @@
 """module for rec class."""
 
 
-def class Rectangle:
+class Rectangle:
     """Rectangle class"""
     pass
