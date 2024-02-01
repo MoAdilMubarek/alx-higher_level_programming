@@ -12,6 +12,7 @@ class Rectangle:
         """Method to Instantiation width & height"""
         self.width = width
         self.height = height
+        self.print_symbol2 = Rectangle.print_symbol
         Rectangle.number_of_instances += 1
 
         @property
@@ -55,7 +56,7 @@ class Rectangle:
     def __str__(self):
         rec = ""
         for i in range(self.height):
-            rec += str(Rectangle.print_symbol) * self.width + '\n'
+            rec += str(self.print_symbol) * self.width + '\n'
         return rec.rstrip('\n')
 
     def __repr__(self):
