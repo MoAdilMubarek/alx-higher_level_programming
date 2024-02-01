@@ -53,3 +53,6 @@ class Rectangle:
         for i in range(self.height):
             rec += '#' * self.width + '\n'
         return rec.rstrip('\n')
+
+    def __repr__(self):
+        return f"Rectangle({self.width}, {self.height})"
